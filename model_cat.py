@@ -22,7 +22,7 @@ def image_recog_cat(image):
     data[0] = normalized_image_array
 
     prediction = model.predict(data)
-    arr = ['The leaf is a diseased cotton leaf.','The leaf is a diseased cotton plant.',"The leaf is a fresh cotton leaf.",  "The leaf is a fresh cotton plant."]
+    arr = ['The leaf is a diseased  leaf.','The leaf is a diseased  plant.',"The leaf is a fresh  leaf.",  "The leaf is a fresh  plant."]
     prediction = arr[np.argmax(prediction)]
     return(prediction)
 
